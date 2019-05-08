@@ -40,7 +40,7 @@ UPDATE STUDENT SET PW='0000', NAME='홍길동', GENDER='F', ADDR='서울시 강�
  -- 회원관리 > 강사 > 로그인 
 SELECT ID, NAME, COURSECODE 
 	FROM TEACHER
-		WHERE ID='' PW='';
+		WHERE ID='' AND PW='';
  
 -- 회원관리 > 강사 > 자기정보 조회 
 SELECT ID, NAME, COURSECODE, PW 
@@ -69,6 +69,11 @@ VALUES(COURSE_SUBJECT_SEQ.NEXTVAL, '','','','','');
 
 ------------------------------------------------------------
 -- 관리자 
+
+-- 로그인 
+SELECT ID, NAME, PW 
+	FROM ADMIN WHERE ID='' AND PW='';
+
 -- 회원관리 > 관리자 > 회원가입 승인
 -- 체크박기 기능
 -- String[]
