@@ -127,7 +127,7 @@ UPDATE STUDENT SET ID ='', NAME='', PW='',GENDER='', BIRTH='',ADDR=''
 	WHERE ID='';
 
 -- 회원관리 > 관리자 > 회원 탈퇴(학생)
-UPDATE STUDENT SET DELFLAG ='N' WHERE ID ='';
+UPDATE STUDENT SET DELFLAG ='N' WHERE ID IN(,);
 	
 -- 회원관리 > 관리자 > 회원정보 조회(강사)
 SELECT ID, NAME, PW, COURSECODE
