@@ -1,0 +1,34 @@
+ ------------------------------------------------------------------------
+-- 학생 
+-- 회원 관리 > 학생 > 수강중인 과정 조회
+SELECT COURSECODE, COURSENAME, STARTDATE, COURSECNT
+	FROM USERCOURSE U JOIN COURSE C
+	USING (COURSECODE) WHERE U.ID = '01011111111';
+ 
+ ------------------------------------------------------------------------
+ -- 강사 
+
+-- 회원관리 > 강사 > 본인 과정 수강학생 조회
+ SELECT ID, NAME, GENDER, BIRTH, ADDR
+ FROM STUDENT JOIN USERCOURSE
+ USING(ID) WHERE COURSECODE = 'C00001'; -- 세션에 담겨있는 해당 강사의 COURSECODE
+
+-- 회원관리 > 강사 > 자기 과정에 있는 과목 조회 
+SELECT SUBJECTCODE, SUBJECTNAME, SUBJECTTYPE, S.TYPECODE
+	FROM SUBJECT S JOIN COURSE_SUBJECT C
+	USING (SUBJECTCODE) WHERE COURSECODE = 'C00001'; 
+	
+-- 회원관리 > 강사 > 과목추가 
+INSERT INTO SUBJECT(SUBJECTCODE,SUBJECTNAME,SUBJECTTYPE,TYPECODE)
+VALUES('','','','');
+	
+-- 과정에 과목 추가 
+INSERT INTO COURSE_SUBJECT (SEQ, COURSECODE, SUBJECTCODE, TYPECODE, CONTENT, SUBJECTTIME)
+VALUES(COURSE_SUBJECT_SEQ.NEXTVAL, '','','','','');
+
+------------------------------------------------------------
+-- 관리자 
+
+-- 회원관리 > 관리자 > 과정 추가 
+INSERT INTO COURSE(COURSECODE, COURSENAME, STARTDATE, COURSECNT)
+VALUES('','',SYSDATE,'');
