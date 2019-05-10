@@ -25,10 +25,3 @@ VALUES('','','','');
 -- 과정에 과목 추가 
 INSERT INTO COURSE_SUBJECT (SEQ, COURSECODE, SUBJECTCODE, TYPECODE, CONTENT, SUBJECTTIME)
 VALUES(COURSE_SUBJECT_SEQ.NEXTVAL, '','','','','');
-
-------------------------------------------------------------
--- 관리자 
-
--- 회원관리 > 관리자 > 과정 추가 
-INSERT INTO COURSE(COURSECODE, COURSENAME, STARTDATE, COURSECNT)
-VALUES('','',SYSDATE,'');
