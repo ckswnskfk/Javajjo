@@ -1,20 +1,21 @@
-Ãâ°á°ü¸®
+ì¶œê²°ê´€ë¦¬
 1. Beacon
-  -> Beacon¿¡¼­ APK °¡ ¼³Ä¡µÈ Beacon ApplicationÀ¸·Î UUID(½Äº°¹øÈ£)¸¦ Àü¼ÛÇÑ ÈÄ 
-	Ãâ°á°ü¸® Application¿¡¼­ DB Server·Î UUID¸¦ Àü¼Û, DB Server¿¡¼­ 
-	Ãâ¼® Á¤º¸¸¦ Application À¸·Î Àü¼Û, DB Server¿¡ Ãâ°áÇöÈ² : A_CHECK (¸¸¾à Ãâ¼® ½Ã A_CHECK¸¦ Y·Î ÀúÀå, °á¼®ÀÌ¶ó¸é null)À» ÀúÀå 
+  -> Beaconì—ì„œ APK ê°€ ì„¤ì¹˜ëœ Beacon Applicationìœ¼ë¡œ UUID(ì‹ë³„ë²ˆí˜¸)ë¥¼ ì „ì†¡í•œ í›„ 
+	ì¶œê²°ê´€ë¦¬ Applicationì—ì„œ DB Serverë¡œ UUIDë¥¼ ì „ì†¡, DB Serverì—ì„œ 
+	ì¶œì„ ì •ë³´ë¥¼ Application ìœ¼ë¡œ ì „ì†¡, DB Serverì— ì¶œê²°í˜„í™© : A_CHECK 
+						(ë§Œì•½ ì¶œì„ ì‹œ A_CHECKë¥¼ Yë¡œ ì €ìž¥, í‡´ì‹¤ ì‹œ A_CHECKë¥¼ Nìœ¼ë¡œ ì €ìž¥, ê²°ì„ì´ë¼ë©´ null)ì„ ì €ìž¥ 
 
-2. Ãâ°á Á¶È¸ 
- - ÇÐ»ý
- -> Ãâ°á TabÀ» Å¬¸¯ ÈÄ Ãâ°á°ü¸® ÆäÀÌÁö·Î ÀÌµ¿ -> Ãâ°á°ü¸® ÆäÀÌÁö¿¡¼­ ÇÐ»ý º»ÀÎÀÇ °úÁ¤ Á¶È¸ °¡´É(COURSENAME)
- -> °úÁ¤ Å¬¸¯ ½Ã ÇØ´ç °úÁ¤ÀÇ Ãâ¼® Á¤º¸ Ãâ·Â(A_CHECK)
- - °­»ç
- -> Ãâ°á TabÀ» Å¬¸¯ ÈÄ Ãâ°á°ü¸® ÆäÀÌÁö·Î ÀÌµ¿ 
- -> Ãâ°á°ü¸® ÆäÀÌÁö¿¡¼­ ÇØ´ç °­»ç°¡ ÁøÇàÇÏ°í ÀÖ´Â °úÁ¤ È®ÀÎ °¡´É(USERCOURSE, ID, COURSECODE) 
- -> Ãâ°á°ü¸® ÆäÀÌÁö¿¡¼­ ÇØ´ç °úÁ¤ÀÇ ÇØ´ç¿ù Ãâ°á Â÷Æ® Á¶È¸ °¡´É(REGDATE,A_CHECK) 
- -> Ãâ°á°ü¸® ÆäÀÌÁö ¾È¿¡ Ä¶¸°´õ¿¡¼­ Ãâ°áÀ» Á¶È¸ÇÏ°í ½ÍÀº ³¯Â¥¸¦ Å¬¸¯ ½Ã ÇØ´ç ³¯Â¥ÀÇ Ãâ¼® ºÎ Ãâ·Â
+2. ì¶œê²° ì¡°íšŒ 
+ - í•™ìƒ
+ -> ì¶œê²° Tabì„ í´ë¦­ í›„ ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ë¡œ ì´ë™ -> ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ì—ì„œ í•™ìƒ ë³¸ì¸ì˜ ê³¼ì • ì¡°íšŒ ê°€ëŠ¥(COURSENAME)
+ -> ê³¼ì • í´ë¦­ ì‹œ í•´ë‹¹ ê³¼ì •ì˜ ì¶œì„ ì •ë³´ ì¶œë ¥(A_CHECK)
+ - ê°•ì‚¬
+ -> ì¶œê²° Tabì„ í´ë¦­ í›„ ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ë¡œ ì´ë™ 
+ -> ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ì—ì„œ í•´ë‹¹ ê°•ì‚¬ê°€ ì§„í–‰í•˜ê³  ìžˆëŠ” ê³¼ì • í™•ì¸ ê°€ëŠ¥(USERCOURSE, ID, COURSECODE) 
+ -> ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ì—ì„œ í•´ë‹¹ ê³¼ì •ì˜ í•´ë‹¹ ì›” ì¶œê²° ì°¨íŠ¸ ì¡°íšŒ ê°€ëŠ¥(REGDATE,A_CHECK) 
+ -> ì¶œê²°ê´€ë¦¬ íŽ˜ì´ì§€ ì•ˆì— ìº˜ë¦°ë”ì—ì„œ ì¶œê²°ì„ ì¡°íšŒí•˜ê³  ì‹¶ì€ ë‚ ì§œë¥¼ í´ë¦­ ì‹œ í•´ë‹¹ ë‚ ì§œì˜ ì¶œì„ë¶€ ì¶œë ¥
 	(ID, COURSECODE, U.REGDATE, A.REGDATE)
- -> Ãâ¼® ºÎ ¾È¿¡ ÇÐ»ý Å¬¸¯ ½Ã ÇÐ»ýÀÇ Ãâ°á »ó¼¼Á¶È¸ ÆäÀÌÁö·Î ÀÌµ¿ 
- -> Ãâ°á »ó¼¼Á¶È¸ ÆäÀÌÁö¿¡¼­ ÇÐ»ýÀÇ ¿ùº° Ãâ°áÇöÈ²(ID,NAME,GENDER,BIRTH)°ú Â÷Æ® Ãâ·Â
- -> ÇÐ»ý Ãâ°á ÆäÀÌÁö¿¡¼­ °á¼® Á¶°Ç¿¡ ÃæÁ·ÇÑ ÇÐ»ý¿¡°Ô ¹®ÀÚ Àü¼Û ¹öÆ° Å¬¸¯½Ã °á¼® ¹®ÀÚ Àü¼Û 	
+ -> ì¶œì„ë¶€ ì•ˆì— í•™ìƒ í´ë¦­ ì‹œ í•™ìƒì˜ ì¶œê²° ìƒì„¸ì¡°íšŒ íŽ˜ì´ì§€ë¡œ ì´ë™ 
+ -> ì¶œê²° ìƒì„¸ì¡°íšŒ íŽ˜ì´ì§€ì—ì„œ í•™ìƒì˜ ì›”ë³„ ì¶œê²°í˜„í™©(ID,NAME,GENDER,BIRTH)ê³¼ ì°¨íŠ¸ ì¶œë ¥
+ -> í•™ìƒ ì¶œê²° íŽ˜ì´ì§€ì—ì„œ ê²°ì„ ì¡°ê±´ì— ì¶©ì¡±í•œ í•™ìƒì—ê²Œ ë¬¸ìž ì „ì†¡ ë²„íŠ¼ í´ë¦­ì‹œ ê²°ì„ ë¬¸ìž ì „ì†¡ 	
    
